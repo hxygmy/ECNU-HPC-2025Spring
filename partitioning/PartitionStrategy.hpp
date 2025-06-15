@@ -13,7 +13,7 @@ class PartitionStrategy {
 public:
     virtual ~PartitionStrategy() = default;
 
-    // 将矩阵划分为若干子块，返回每个进程负责的起始和结束索引
+    // 将矩阵划分为若干子块，返回每个进程负责的起始和结束索引, worldSize 指节点数量
     virtual std::vector<std::pair<int, int>> partition(int worldSize, const MatrixBase& matrix) const = 0;
 
     // 获取分区类型名称

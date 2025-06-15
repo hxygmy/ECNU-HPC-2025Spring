@@ -31,3 +31,7 @@ MatrixMultiplication/
     ├── MatrixReader.hpp        // 读取矩阵（CSR/CSC/文本）
     └── MatrixWriter.hpp        // 写出结果矩阵
 ```
+
+矩阵乘法:
+[Adaptive Sparse Tiling for Sparse Matrix
+Multiplication](https://dl.acm.org/doi/abs/10.1145/3293883.3295712)

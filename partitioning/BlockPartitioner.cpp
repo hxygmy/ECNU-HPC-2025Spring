@@ -13,7 +13,7 @@ std::vector<std::pair<int, int>> BlockPartitioner::partition(int worldSize, cons
     // 简化：假设 worldSize 是平方数，并平均划分成 sqrt(worldSize) x sqrt(worldSize) 的块
     int gridSize = static_cast<int>(std::sqrt(worldSize));
     if (gridSize * gridSize != worldSize) {
-        throw std::invalid_argument("World size must be a perfect square for block partitioning.");
+        throw std::invalid_argument("请使用完全平方数的节点数量");
     }
 
     std::vector<std::pair<int, int>> ranges;
